@@ -1,6 +1,14 @@
----
-description: Coursera course milestone
----
+# My learning book
 
-# Algorithms and data structures
+## Just a learning notes from long-life ~~procrastinating~~ learning
+
+### Here is what I plan to do:
+
+* [ ] Deep learning and AI
+* [ ] Robotics
+* [ ] Algorithms and Data Structures
+
+
+
+
 

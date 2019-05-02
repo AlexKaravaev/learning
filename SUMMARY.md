@@ -1,6 +1,7 @@
 # Table of contents
 
-* [Algorithms and data structures](README.md)
+* [My learning book](README.md)
 * [Deep learning](deep-learning.md)
 * [Robotics](robotics.md)
+* [Algorithms and data structures](algorithms-and-data-structures.md)
 
