@@ -1,6 +1,2 @@
-# learning
+# Initial page
 
-
-## Goals
-[] - Algorithms and data structures
-[] - Deep learning
