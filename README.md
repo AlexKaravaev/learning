@@ -1,2 +1,6 @@
 # learning
-Learning
+
+
+## Goals
+[] - Algorithms and data structures
+[] - Deep learning
