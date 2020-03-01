@@ -1,8 +1,7 @@
 #include <iostream>
 #include <sstream>
-
 #include <cmath>
-
+#include <exception>
 #include <set>
 #include <map>
 #include <vector>
@@ -24,7 +23,8 @@ public:
           denominator = 1;
           return;
       }
-
+      if (n_denominator == 0)
+        throw invalid_argument("Bad denominator");
       auto gcd_ = gcd(n_numerator, n_denominator);
       numerator = copysign(1,static_cast<float>(n_numerator)/n_denominator) * abs(n_numerator/gcd_);
       denominator = abs(n_denominator/gcd_);
@@ -76,7 +76,11 @@ Rational operator*(const Rational& lhs, const Rational& rhs)
 
 Rational operator/(const Rational& lhs, const Rational& rhs)
 {
-    return Rational(lhs.Numerator() * rhs.Denominator(), lhs.Denominator() * rhs.Numerator());
+    auto denum = lhs.Denominator() * rhs.Numerator();
+    if (denum == 0)
+        throw domain_error("Division by zero");
+
+    return Rational(lhs.Numerator() * rhs.Denominator(), denum);
 }
 
 ostream& operator<<(ostream& stream, const Rational& rat)
@@ -99,35 +103,20 @@ istream& operator>>(istream& stream, Rational& rat)
     return stream;
 }
 
-int main() {
-    {
-        const set<Rational> rs = {{1, 2}, {1, 25}, {3, 4}, {3, 4}, {1, 2}};
-        if (rs.size() != 3) {
-            cout << "Wrong amount of items in the set" << endl;
-            return 1;
-        }
 
-        vector<Rational> v;
-        for (auto x : rs) {
-            v.push_back(x);
-        }
-        if (v != vector<Rational>{{1, 25}, {1, 2}, {3, 4}}) {
-            cout << "Rationals comparison works incorrectly" << endl;
-            return 2;
-        }
+int main() {
+    try {
+        Rational r(1, 0);
+        cout << "Doesn't throw in case of zero denominator" << endl;
+        return 1;
+    } catch (invalid_argument&) {
     }
 
-    {
-        map<Rational, int> count;
-        ++count[{1, 2}];
-        ++count[{1, 2}];
-
-        ++count[{2, 3}];
-
-        if (count.size() != 2) {
-            cout << "Wrong amount of items in the map" << endl;
-            return 3;
-        }
+    try {
+        auto x = Rational(1, 2) / Rational(0, 1);
+        cout << "Doesn't throw in case of division by zero" << endl;
+        return 2;
+    } catch (domain_error&) {
     }
 
     cout << "OK" << endl;
