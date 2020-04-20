@@ -1,1 +1,123 @@
 main
+.vscode/settings.json
+cpp_yandex_specialization/.idea/.gitignore
+cpp_yandex_specialization/.idea/.name
+cpp_yandex_specialization/.idea/cpp_yandex_specialization.iml
+cpp_yandex_specialization/.idea/misc.xml
+cpp_yandex_specialization/.idea/modules.xml
+cpp_yandex_specialization/.idea/vcs.xml
+cpp_yandex_specialization/.vscode/settings.json
+cpp_yandex_specialization/white_belt/week4/time_server/main.cpp
+cpp_yandex_specialization/white_belt/week5/.idea/.gitignore
+cpp_yandex_specialization/white_belt/week5/.idea/misc.xml
+cpp_yandex_specialization/white_belt/week5/.idea/modules.xml
+cpp_yandex_specialization/white_belt/week5/.idea/vcs.xml
+cpp_yandex_specialization/white_belt/week5/.idea/week5.iml
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/cmake_install.cmake
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeCache.txt
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/Makefile
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/week5
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/week5.cbp
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/clion-environment.txt
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/clion-log.txt
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/cmake.check_cache
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/CMakeOutput.log
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/Makefile.cmake
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/Makefile2
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/progress.marks
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/TargetDirectories.txt
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.out
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.out
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/week5.dir/build.make
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/week5.dir/cmake_clean.cmake
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/week5.dir/CXX.includecache
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/week5.dir/depend.internal
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/week5.dir/depend.make
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/week5.dir/DependInfo.cmake
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/week5.dir/flags.make
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/week5.dir/link.txt
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/week5.dir/main.cpp.o
+cpp_yandex_specialization/white_belt/week5/cmake-build-debug/CMakeFiles/week5.dir/progress.make
+cpp_yandex_specialization/white_belt/week5_bp/CMakeLists.txt
+cpp_yandex_specialization/white_belt/week5_bp/main.cpp
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/cmake_install.cmake
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeCache.txt
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/first_week_final
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/first_week_final.cbp
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/Makefile
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/Project.cbp
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/clion-environment.txt
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/clion-log.txt
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/cmake.check_cache
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/CMakeOutput.log
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/Makefile.cmake
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/Makefile2
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/progress.marks
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/TargetDirectories.txt
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.out
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.out
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/first_week_final.dir/build.make
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/first_week_final.dir/cmake_clean.cmake
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/first_week_final.dir/CXX.includecache
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/first_week_final.dir/depend.internal
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/first_week_final.dir/depend.make
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/first_week_final.dir/DependInfo.cmake
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/first_week_final.dir/flags.make
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/first_week_final.dir/link.txt
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/first_week_final.dir/main.cpp.o
+cpp_yandex_specialization/white_belt/week5_bp/cmake-build-debug/CMakeFiles/first_week_final.dir/progress.make
+crackin_the_coding_interview/chapter1/solutions.py
+*.out
+*.o
+*.zip
+build
+*.pyc
+*-checkpoint*
+*.h5
+*.png
+*.jpg
+cpp_yandex_specialization/yellow_belt/week2/palindrom_tests/test_palindrome
+cpp_yandex_specialization/yellow_belt/week2/rational_tests/test_rational
+cpp_yandex_specialization/yellow_belt/week4/merge_sort/merge
+cpp_yandex_specialization/yellow_belt/week4/test/test
+cpp_yandex_specialization/yellow_belt/week5/figures/figures
+cpp_yandex_specialization/yellow_belt/week5/own_inheritance/inheritance
+cpp_yandex_specialization/yellow_belt/week5/refactoring/refactored
+deeplearning/Neural_Networks/Week 2/Logistic Regression as a Neural Network/Logistic Regression with a Neural Network mindset v4 - Stanford.ipynb
+deeplearning/Neural_Networks/Week 2/Logistic Regression as a Neural Network/Logistic Regression with a Neural Network mindset v4.ipynb
+deeplearning/Neural_Networks/Week 2/Logistic Regression as a Neural Network/Logistic Regression with a Neural Network mindset v5.ipynb
+deeplearning/Neural_Networks/Week 2/Python Basics with Numpy/Python Basics With Numpy v3.ipynb
+deeplearning/Neural_Networks/Week 2/Python Basics with Numpy/Python_Basics_With_Numpy_v3a.ipynb
+deeplearning/Neural_Networks/Week 3/Planar data classification with one hidden layer/Planar data classification with one hidden layer v4.ipynb
+deeplearning/Neural_Networks/Week 3/Planar data classification with one hidden layer/Planar_data_classification_with_onehidden_layer_v6a.ipynb
+deeplearning/Neural_Networks/Week 3/Planar data classification with one hidden layer/Planar_data_classification_with_onehidden_layer_v6b.ipynb
+deeplearning/Neural_Networks/Week 3/Planar data classification with one hidden layer/images/sgd_bad.gif
+deeplearning/Neural_Networks/Week 3/Planar data classification with one hidden layer/images/sgd.gif
+deeplearning/Neural_Networks/Week 4/Building your Deep Neural Network - Step by Step/Building your Deep Neural Network - Step by Step v5.ipynb
+deeplearning/Neural_Networks/Week 4/Building your Deep Neural Network - Step by Step/Building your Deep Neural Network - Step by Step v6.ipynb
+deeplearning/Neural_Networks/Week 4/Building your Deep Neural Network - Step by Step/Building your Deep Neural Network - Step by Step v7.ipynb
+deeplearning/Neural_Networks/Week 4/Building your Deep Neural Network - Step by Step/Building_your_Deep_Neural_Network_Step_by_Step_v8a.ipynb
+deeplearning/Neural_Networks/Week 4/Building your Deep Neural Network - Step by Step/testCases_v3.py
+deeplearning/Neural_Networks/Week 4/Building your Deep Neural Network - Step by Step/testCases_v4.py
+deeplearning/Neural_Networks/Week 4/Deep Neural Network Application: Image Classification/Deep Neural Network - Application v3.ipynb
+deeplearning/Neural_Networks/Week 4/Deep Neural Network Application: Image Classification/Deep Neural Network - Application v4.ipynb
+deeplearning/Neural_Networks/Week 4/Deep Neural Network Application: Image Classification/Deep Neural Network - Application v5.ipynb
+deeplearning/Neural_Networks/Week 4/Deep Neural Network Application: Image Classification/Deep Neural Network - Application v6.ipynb
+deeplearning/Neural_Networks/Week 4/Deep Neural Network Application: Image Classification/Deep Neural Network - Application v7.ipynb
+deeplearning/Neural_Networks/Week 4/Deep Neural Network Application: Image Classification/dnn_app_utils_v2.py
