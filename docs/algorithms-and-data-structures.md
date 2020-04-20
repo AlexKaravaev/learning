@@ -1,2 +1,0 @@
-# Algorithms and data structures
-
