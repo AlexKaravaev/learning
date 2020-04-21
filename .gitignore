@@ -121,3 +121,76 @@ deeplearning/Neural_Networks/Week 4/Deep Neural Network Application: Image Class
 deeplearning/Neural_Networks/Week 4/Deep Neural Network Application: Image Classification/Deep Neural Network - Application v6.ipynb
 deeplearning/Neural_Networks/Week 4/Deep Neural Network Application: Image Classification/Deep Neural Network - Application v7.ipynb
 deeplearning/Neural_Networks/Week 4/Deep Neural Network Application: Image Classification/dnn_app_utils_v2.py
+deeplearning/Improving_Deep_Neural_Networks/week5/Regularization/Regularization - v2.ipynb
+deeplearning/Improving_Deep_Neural_Networks/week5/Regularization/Regularization_v2a.ipynb
+deeplearning/Improving_Deep_Neural_Networks/week5/Regularization/datasets/data.mat
+deeplearning/Improving_Deep_Neural_Networks/week5/Regularization/images/dropout1_kiank.mp4
+deeplearning/Improving_Deep_Neural_Networks/week5/Regularization/images/dropout2_kiank.mp4
+deeplearning/Improving_Deep_Neural_Networks/week6/opt_utils_v1a.py
+deeplearning/Improving_Deep_Neural_Networks/week6/Optimization methods.ipynb
+deeplearning/Improving_Deep_Neural_Networks/week6/datasets/data.mat
+deeplearning/Improving_Deep_Neural_Networks/week6/images/opt1.gif
+deeplearning/Improving_Deep_Neural_Networks/week6/images/opt2.gif
+deeplearning/Improving_Deep_Neural_Networks/week7/improv_utils.py
+deeplearning/Improving_Deep_Neural_Networks/week7/Tensorflow Tutorial v1.ipynb
+deeplearning/Improving_Deep_Neural_Networks/week7/Tensorflow Tutorial v2.ipynb
+deeplearning/Improving_Deep_Neural_Networks/week7/Tensorflow Tutorial v3.ipynb
+deeplearning/Improving_Deep_Neural_Networks/week7/Tensorflow Tutorial v3a.ipynb
+*.csv
+*.mp4
+deeplearning/Conv_Nets/week1/Convolution model - Application - v1.ipynb
+deeplearning/Conv_Nets/week1/Convolution model - Step by Step - v1.ipynb
+deeplearning/Conv_Nets/week1/Convolution model - Step by Step - v2.ipynb
+deeplearning/Conv_Nets/week1/images/Convolution_schematic.gif
+deeplearning/Conv_Nets/week2/KerasTutorial/Keras - Tutorial - Happy House v1.ipynb
+deeplearning/Conv_Nets/week2/KerasTutorial/Keras - Tutorial - Happy House v2.ipynb
+deeplearning/Conv_Nets/week2/ResNets/Residual Networks - v1.ipynb
+deeplearning/Conv_Nets/week2/ResNets/Residual Networks - v2.ipynb
+deeplearning/Conv_Nets/week3/Car detection for Autonomous Driving/Autonomous driving application - Car detection - v1.ipynb
+deeplearning/Conv_Nets/week3/Car detection for Autonomous Driving/Autonomous driving application - Car detection - v2.ipynb
+deeplearning/Conv_Nets/week3/Car detection for Autonomous Driving/Autonomous driving application - Car detection - v3.ipynb
+deeplearning/Conv_Nets/week3/Car detection for Autonomous Driving/Drive.ai Dataset Sample LICENSE
+deeplearning/Conv_Nets/week3/Car detection for Autonomous Driving/LICENSE
+deeplearning/Conv_Nets/week3/Car detection for Autonomous Driving/font/FiraMono-Medium.otf
+deeplearning/Conv_Nets/week3/Car detection for Autonomous Driving/font/SIL Open Font License.txt
+deeplearning/Conv_Nets/week4/Face Recognition/Face Recognition for the Happy House - v1.ipynb
+deeplearning/Conv_Nets/week4/Face Recognition/Face Recognition for the Happy House - v2.ipynb
+deeplearning/Conv_Nets/week4/Face Recognition/Face Recognition for the Happy House - v3.ipynb
+deeplearning/Conv_Nets/week4/Neural Style Transfer/Art Generation with Neural Style Transfer - v1.ipynb
+deeplearning/Conv_Nets/week4/Neural Style Transfer/Art Generation with Neural Style Transfer - v2.ipynb
+deeplearning/Conv_Nets/week4/Neural Style Transfer/Art Generation with Neural Style Transfer - v3.ipynb
+deeplearning/Conv_Nets/week4/Neural Style Transfer/Pretrained_Model_LICENSE.txt
+deeplearning/Conv_Nets/week4/Neural Style Transfer/images/content.jpeg
+deeplearning/Conv_Nets/week4/Neural Style Transfer/pretrained-model/imagenet-vgg-verydeep-19.mat
+*.wav
+*.npy
+deeplearning/Sequence_Models/Week 1/Building a Recurrent Neural Network - Step by Step/Building a Recurrent Neural Network - Step by Step - v3.ipynb
+deeplearning/Sequence_Models/Week 1/Building a Recurrent Neural Network - Step by Step/previous versions/Building a Recurrent Neural Network - Step by Step - v1.ipynb
+deeplearning/Sequence_Models/Week 1/Dinosaur Island -- Character-level language model/Dinosaurus Island -- Character level language model final - v3.ipynb
+deeplearning/Sequence_Models/Week 1/Dinosaur Island -- Character-level language model/Dinosaurus_Island_Character_level_language_model_final_v3a.ipynb
+deeplearning/Sequence_Models/Week 1/Dinosaur Island -- Character-level language model/images/mangosaurus.jpeg
+deeplearning/Sequence_Models/Week 1/Dinosaur Island -- Character-level language model/previous versions/Dinosaurus Island -- Character level language model final - v1.ipynb
+deeplearning/Sequence_Models/Week 1/Dinosaur Island -- Character-level language model/previous versions/Dinosaurus Island -- Character level language model final - v2-Copy1.ipynb
+deeplearning/Sequence_Models/Week 1/Jazz improvisation with LSTM/Improvise a Jazz Solo with an LSTM Network - v3.ipynb
+deeplearning/Sequence_Models/Week 1/Jazz improvisation with LSTM/tune1.midi
+deeplearning/Sequence_Models/Week 1/Jazz improvisation with LSTM/data/30s_seq.mp3
+deeplearning/Sequence_Models/Week 1/Jazz improvisation with LSTM/data/30s_trained_model.mp3
+deeplearning/Sequence_Models/Week 1/Jazz improvisation with LSTM/data/deepjazz_on_metheny...128_epochs.midi
+deeplearning/Sequence_Models/Week 1/Jazz improvisation with LSTM/data/original_metheny.mid
+deeplearning/Sequence_Models/Week 1/Jazz improvisation with LSTM/data/training_example.mp3
+deeplearning/Sequence_Models/Week 1/Jazz improvisation with LSTM/previous versions/Improvise a Jazz Solo with an LSTM Network - v1.ipynb
+deeplearning/Sequence_Models/Week 1/Jazz improvisation with LSTM/previous versions/Improvise a Jazz Solo with an LSTM Network - v2.ipynb
+deeplearning/Sequence_Models/Week 2/Emojify/Emojify - v2.ipynb
+deeplearning/Sequence_Models/Week 2/Emojify/data/glove.6B.50d.txt
+deeplearning/Sequence_Models/Week 2/Emojify/previous versions/Emojify - learners.ipynb
+deeplearning/Sequence_Models/Week 2/Emojify/previous versions/Emojify - v1.ipynb
+deeplearning/Sequence_Models/Week 2/Word Vector Representation/Operations on word vectors - v2.ipynb
+deeplearning/Sequence_Models/Week 2/Word Vector Representation/data/glove.6B.50d.txt
+deeplearning/Sequence_Models/Week 2/Word Vector Representation/data/input-Copy1.txt
+deeplearning/Sequence_Models/Week 2/Word Vector Representation/previous versions/Operations on word vectors - v1.ipynb
+deeplearning/Sequence_Models/Week 3/Machine Translation/Neural machine translation with attention - v4.ipynb
+deeplearning/Sequence_Models/Week 3/Machine Translation/previous versions/Neural machine translation with attention - v1.ipynb
+deeplearning/Sequence_Models/Week 3/Machine Translation/previous versions/Neural machine translation with attention - v2.ipynb
+deeplearning/Sequence_Models/Week 3/Machine Translation/previous versions/Neural machine translation with attention - v3.ipynb
+deeplearning/Sequence_Models/Week 3/Trigger word detection/Trigger word detection - v1.ipynb
+deeplearning/Sequence_Models/readonly/glove.6B.50d.txt
