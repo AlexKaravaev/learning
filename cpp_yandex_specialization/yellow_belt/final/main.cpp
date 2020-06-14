@@ -10,12 +10,11 @@ using namespace std;
 
 string ParseEvent(istream& is) {
   // Реализуйте эту функцию
+  return "blabla";
 }
 
-void TestAll();
 
 int main() {
-  TestAll();
 
   Database db;
 

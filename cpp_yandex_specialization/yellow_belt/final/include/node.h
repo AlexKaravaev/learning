@@ -25,16 +25,16 @@ public:
     virtual bool Evaluate(const Date& date, const std::string& event) const = 0;
 };
 
-class EmptyNode: Node
+class EmptyNode: public Node
 {
 
 public:
-    EmptyNode();
+    EmptyNode() {};
     bool Evaluate(const Date& date, const std::string& event) const override;
 
 };
 
-class DateComparisonNode: Node
+class DateComparisonNode: public Node
 {
 
 public:
@@ -46,7 +46,7 @@ private:
     const Comparison& cmp_;
 };
 
-class EventComparisonNode: Node
+class EventComparisonNode: public Node
 {
 
 public:

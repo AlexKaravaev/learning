@@ -32,3 +32,8 @@ void Database::Print(std::ostream& stream) const{
         }
     }
 }
+
+std::string Database::Last(const Date& date) const
+{
+    return "last";
+}
