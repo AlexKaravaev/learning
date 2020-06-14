@@ -46,7 +46,7 @@ template <class It> std::shared_ptr<Node> ParseComparison(It& current, It end) {
     throw std::logic_error("Unknown comparison token: " + op.value);
   }
 
-  const string& value = current->value;
+  const std::string& value = current->value;
   ++current;
 
   if (column.value == "date") {

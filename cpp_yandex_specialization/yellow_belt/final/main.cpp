@@ -27,7 +27,7 @@ int main() {
     if (command == "Add") {
       const auto date = ParseDate(is);
       const auto event = ParseEvent(is);
-      db.Add(date, event);
+      db.AddEvent(date, event);
     } else if (command == "Print") {
       db.Print(cout);
     } else if (command == "Del") {

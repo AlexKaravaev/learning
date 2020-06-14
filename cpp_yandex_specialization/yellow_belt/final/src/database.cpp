@@ -25,10 +25,10 @@ std::vector<std::string> Database::Find(const Date& date) const{
 
 }
 
-void Database::Print() const{
+void Database::Print(std::ostream& stream) const{
     for(auto& [date, events]: event_list){
         for(auto& event: events){
-            std::cout << date << " " << event << std::endl;
+            stream << date << " " << event << std::endl;
         }
     }
 }

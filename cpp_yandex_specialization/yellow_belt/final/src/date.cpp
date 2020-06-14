@@ -86,3 +86,12 @@ std::ostream& operator<<(std::ostream& stream, const Date& date)
     stream << std::setfill('0') << std::setw(2) << date.GetDay();
     return stream;
 }
+
+Date ParseDate(std::istream& stream)
+{
+    std::string date_string;
+    stream >> date_string;
+    return Date(date_string);
+}
+
+
