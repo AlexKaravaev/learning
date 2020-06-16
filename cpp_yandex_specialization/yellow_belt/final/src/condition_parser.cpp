@@ -28,6 +28,7 @@ template <class It> std::shared_ptr<Node> ParseComparison(It& current, It end) {
   if (current == end) {
     throw std::logic_error("Expected right value of comparison");
   }
+  std::cout << op.value << std::endl;
 
   Comparison cmp;
   if (op.value == "<") {

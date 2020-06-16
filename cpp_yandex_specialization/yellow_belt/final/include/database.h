@@ -1,9 +1,12 @@
 #pragma once
+
 #include <string>
 #include <map>
 #include <vector>
 #include <iostream>
 #include <set>
+#include <algorithm>
+
 #include "date.h"
 
 
@@ -33,5 +36,15 @@ template<class Predicate>
 std::vector<std::string> Database::FindIf(Predicate p) const
 {
 
-    return std::vector<std::string>({"test"});
+    std::vector<std::string> filtered;
+    for(auto& [date, event_set]: event_list)
+    {
+        for(auto& event: event_set)
+        {
+            if (p(date, event))
+                filtered.push_back(event);
+        }
+    }
+
+    return filtered;
 }

@@ -10,7 +10,9 @@ using namespace std;
 
 string ParseEvent(istream& is) {
   // Реализуйте эту функцию
-  return "blabla";
+
+  std::string event(std::istreambuf_iterator<char>(is), {});
+  return event;
 }
 
 

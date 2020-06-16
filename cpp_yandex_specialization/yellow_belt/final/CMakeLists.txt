@@ -29,14 +29,14 @@ include_directories("include")
 #-------------------
 # Test
 #-------------------
-add_executable(condition_parser_test  tests/condition_parser_test.cpp)
-add_dependencies(condition_parser_test gtest)
-target_link_libraries(condition_parser_test ${binary_dir}/libgtest.a)
-target_link_libraries(condition_parser_test ${binary_dir}/libgtest_main.a)
+#add_executable(condition_parser_test  tests/condition_parser_test.cpp)
+#add_dependencies(condition_parser_test gtest)
+#target_link_libraries(condition_parser_test ${binary_dir}/libgtest.a)
+#target_link_libraries(condition_parser_test ${binary_dir}/libgtest_main.a)
 
 enable_testing()
-add_test (NAME condition_parser_test
-          COMMAND condition_parser_test)
+#add_test (NAME condition_parser_test
+#          COMMAND condition_parser_test)
 
 include_directories(${COMMON_INCLUDES})
 

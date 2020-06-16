@@ -1,5 +1,5 @@
 #include "node.h"
-
+#include <iostream>
 
 
 bool EmptyNode::Evaluate(const Date& date, const std::string& event) const
@@ -37,12 +37,12 @@ EventComparisonNode::EventComparisonNode(const Comparison& cmp, const std::strin
 
 bool EventComparisonNode::Evaluate(const Date& date, const std::string& event) const
 {
+    std::cout << this->event_ << " " << event << cmp_ << std::endl;
     if (cmp_ == Comparison::Equal)
         return event == this->event_;
-    else if(cmp_ == Comparison::NotEqual)
+    if(cmp_ == Comparison::NotEqual)
         return event != this->event_;
-    else
-        throw std::logic_error("Operation on event, that is not EQUAL nor NOT_EQUAL");
+    //throw std::logic_error("Operation on event, that is not EQUAL nor NOT_EQUAL");
 }
 
 LogicalOperationNode::LogicalOperationNode(const LogicalOperation& op, const std::shared_ptr<Node>& left,
