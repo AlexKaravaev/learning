@@ -10,8 +10,16 @@ using namespace std;
 
 string ParseEvent(istream& is) {
   // Реализуйте эту функцию
+    std::string event;
+    getline(is, event);
 
-  std::string event(std::istreambuf_iterator<char>(is), {});
+    auto first = event.find_first_not_of(" ");
+
+    if (first == std::string::npos)
+        return std::string();
+
+    event.erase(0, first);
+    return event;
   return event;
 }
 
@@ -28,7 +36,7 @@ int main() {
     if (command == "Add") {
       const auto date = ParseDate(is);
       const auto event = ParseEvent(is);
-      db.AddEvent(date, event);
+      db.Add(date, event);
     } else if (command == "Print") {
       db.Print(cout);
     } else if (command == "Del") {

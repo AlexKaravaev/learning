@@ -22,9 +22,8 @@ ExternalProject_Get_Property(gtest source_dir binary_dir)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED on)
-file(GLOB SOURCE src/*.cpp)
+file(GLOB SOURCE *.cpp)
 
-include_directories("include")
 
 #-------------------
 # Test
