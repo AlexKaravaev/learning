@@ -1,0 +1,5 @@
+catkin_ws/src/fake_ar_publisher
+catkin_ws/build
+catkin_ws/devel
+catkin_ws/.catkin_tools
+catkin_ws/logs
