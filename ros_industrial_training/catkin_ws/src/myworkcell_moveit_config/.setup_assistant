@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: myworkcell_support
+    relative_path: urdf/workcell.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/myworkcell.srdf
+  CONFIG:
+    author_name: Alexander Karavaev
+    author_email: alexkaravev@gmail.com
+    generated_timestamp: 1610576390

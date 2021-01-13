@@ -2,6 +2,7 @@
 **  Simple ROS Node
 **/
 #include <ros/ros.h>
+#include <tf/transform_listener.h>
 #include <fake_ar_publisher/ARMarker.h>
 #include <myworkcell_core/LocalizePart.h>
 
@@ -29,13 +30,27 @@ public:
       fake_ar_publisher::ARMarkerConstPtr p = last_msg_;
       if (!p) return false;
 
-      res.pose = p->pose.pose;
+
+      //res.pose = p->pose.pose;
+      
+      tf::Transform cam_to_target;
+      tf::poseMsgToTF(p->pose.pose, cam_to_target);
+
+      tf::StampedTransform req_to_cam;
+      listener_.lookupTransform(req.base_frame, p->header.frame_id, ros::Time(0), req_to_cam);
+
+      tf::Transform req_to_target;
+      req_to_target = req_to_cam * cam_to_target;
+      
+      tf::poseTFToMsg(req_to_target, res.pose);
+
       return true;
     }
 
     ros::Subscriber ar_sub_;
     fake_ar_publisher::ARMarkerConstPtr last_msg_;
     ros::ServiceServer server_;
+    tf::TransformListener listener_;
 };
 
 int main(int argc, char* argv[])
