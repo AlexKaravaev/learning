@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   tf
   fake_ar_publisher
+  moveit_ros_planning_interface
   geometry_msgs
   message_generation
 )
@@ -109,6 +110,8 @@ catkin_package(
  CATKIN_DEPENDS
    roscpp
    fake_ar_publisher
+   moveit_ros_planning_interface
+   tf
    message_runtime
    geometry_msgs
 #  DEPENDS system_lib

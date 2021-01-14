@@ -1,5 +1,8 @@
 #include <ros/ros.h>
 #include <myworkcell_core/LocalizePart.h>
+#include <tf/tf.h>
+#include <moveit/move_group_interface/move_group_interface.h>
+
 
 class ScanNPlan
 {
@@ -23,6 +26,16 @@ public:
       return;
     }
     ROS_INFO_STREAM("part localized: " << srv.response);
+
+    geometry_msgs::Pose move_target = srv.response.pose;
+    moveit::planning_interface::MoveGroupInterface move_group("manipulator");
+
+    
+    move_group.setPoseReferenceFrame(base_frame);
+    move_group.setPoseTarget(move_target); 
+    move_group.move();
+
+
   }
 
 private:
@@ -33,6 +46,10 @@ private:
 int main(int argc, char **argv)
 {
   ros::init(argc, argv, "myworkcell_node");
+
+  ros::AsyncSpinner async_spinner(1);
+  async_spinner.start();
+
   ros::NodeHandle nh;
   ros::NodeHandle private_node_handle("~");
 
@@ -46,5 +63,5 @@ int main(int argc, char **argv)
   ros::Duration(.5).sleep();  // wait for the class to initialize
   app.start(base_frame);
 
-  ros::spin();
+  ros::waitForShutdown();
 }
