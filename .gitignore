@@ -1,4 +1,6 @@
 main
+**/target
+.idea
 .vscode/settings.json
 cpp_yandex_specialization/.idea/.gitignore
 cpp_yandex_specialization/.idea/.name
