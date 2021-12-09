@@ -33,6 +33,7 @@ fn main() {
         SpreadsheetCell::Float(10.22),
     ];
 
+    
     match &row[1] {
         SpreadsheetCell::Float(i) => println!("Float {}", i),
         _ => println!("Not a float"),
@@ -41,7 +42,7 @@ fn main() {
     let blue = String::from("blue");
     let yellow = String::from("Yellow");
 
-    let mut scores = HashMap::new();
+    let mut scores: HashMap<String, i32> = HashMap::new();
 
     scores.insert(blue, 10);
     scores.insert(yellow, 20);
@@ -50,6 +51,14 @@ fn main() {
         Some(&score) => println!("score for blue: {}", score),
         _ => println!("No such team"),
     };
+
+    let mut s = String::new();
+    let data = "initial contents";
+
+    let s = data.to_string();
+    // Also this works let s = "initial contents".to_string();
+
+
 
 
 }
