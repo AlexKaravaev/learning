@@ -1,6 +1,7 @@
 use std;
+use generic_types::{Tweet, Summary};
 
-fn largest<T: std::cmp::PartialOrd>(list: &[T]) -> T where T:Copy{
+fn largest<T>(list: &[T]) -> T where T: Copy + PartialOrd{
     let mut largest = list[0];
 
     for &number in list{
@@ -45,4 +46,13 @@ fn main() {
     let float = Point { x: 1.0, y: 4.0 };
 
     println!("dist {}", float.distance_from_origin());
+
+    let tweet = Tweet {
+        username: String::from("test"),
+        content: String::from("test content"),
+        reply: false,
+        retweet: false,
+    };
+
+    println!("tweet {}", tweet.summarize());
 }
