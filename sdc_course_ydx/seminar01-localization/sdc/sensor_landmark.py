@@ -12,6 +12,7 @@ def get_global_to_local_tranform_matrix(x, y, yaw):
     T_local2global = np.eye(3, dtype=np.float64)
     T_local2global[:2, :2] = R
     T_local2global[0, 2] = x
+    print('1')
     T_local2global[1, 2] = y
     # В действительности нам нужна матрица перехода из глобальной системы координат в локальную
     T_global2local = np.linalg.inv(T_local2global)
@@ -31,6 +32,7 @@ def get_landmark_position_in_local_frame(x, y, yaw, landmark_x, landmark_y):
     T_global2local = get_global_to_local_tranform_matrix(x=x, y=y, yaw=yaw)
     # Положение наблюдаемого объекта в глобальной системе координат
     L_global = np.array([landmark_x, landmark_y, 1], dtype=np.float64)
+    print('2')
     # Положение наблюдаемого объекта в локальной системе координат
     L_local = np.dot(T_global2local, L_global)
     return L_local[:2]
@@ -38,6 +40,7 @@ def get_landmark_position_in_local_frame(x, y, yaw, landmark_x, landmark_y):
 
 def get_landmarks_position_in_local_frame(x, y, yaw, landmarks_xy):
     T_global2local = get_global_to_local_tranform_matrix(x=x, y=y, yaw=yaw)
+    print('3')
     return np.dot(landmarks_xy, T_global2local[:2, :2].T) + T_global2local[:2, 0][None, :]
 
 
