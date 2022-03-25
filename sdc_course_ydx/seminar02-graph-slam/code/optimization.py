@@ -30,14 +30,40 @@ class Optimization(object):
         self._lambda_value = None
         self._lambda_factor = 2.0
 
+    def _apply_control(self, pose, control):
+        # Linear motion
+        if control[1] == 0:
+            return ge.SE2Vertex([
+                pose.params[0] + control[0],
+                pose.params[1],
+                pose.params[2]
+            ])
+
+        return ge.SE2Vertex([
+            pose.params[0] + control[0] / control[1] * (-np.sin(pose.params[2]) + np.sin(pose.params[2] + control[1])),
+            pose.params[1] + control[0] / control[1] * (np.cos(pose.params[2]) - np.cos(pose.params[2] + control[1])),
+            control[1]])
+
 
     def _init_pose_vertices(self, timeline):
         self._pose_vertices = []
-        '''
-        #########################################
-        TO_IMPLEMENT Seminar.Task#1
-        '''
-        pass
+        pose = ge.SE2Vertex(timeline[0][0]['pose'])
+        control = timeline[0][1]['command']
+
+        pose = self._apply_control(pose, control)
+
+
+        for i in range(1,len(timeline)):
+            stamp = timeline[i]
+
+            if (stamp[0]['type'] != 'control'):
+                continue
+            control = stamp[0]['command']
+            pose = self._apply_control(pose, control)
+            self._pose_vertices.append(pose)
+
+        return self._pose_vertices
+
 
 
     def _init_constraints(self, timeline):

@@ -110,11 +110,14 @@ class Feature(object):
 class PriorEdge(Edge):
     inf = None
     error = None
-    '''
-    #########################################
-    TO_IMPLEMENT Seminar.Task#2
-    '''
 
+    def __init__(self, vertex, event, cov_diag):
+        super(PriorEdge, self).__init__([vertex])
+        self.inf = np.linalg.inv(np.diag(cov_diag))
+        self._pose = np.array(event['pose'])
+
+    def compute_error(self):
+        self.error = np.array(self._pose) - np.array(self.vertices[0].params)
 
 class OdometryEdge(Edge):
     inf = None
