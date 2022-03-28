@@ -49,10 +49,10 @@ class Optimization(object):
         self._pose_vertices = []
         pose = ge.SE2Vertex(timeline[0][0]['pose'])
         control = timeline[0][1]['command']
-
+        self._pose_vertices.append(pose)
         pose = self._apply_control(pose, control)
 
-
+        self._pose_vertices.append(pose)
         for i in range(1,len(timeline)):
             stamp = timeline[i]
 

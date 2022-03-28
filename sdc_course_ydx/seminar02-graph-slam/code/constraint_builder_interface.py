@@ -50,7 +50,7 @@ class PriorEdgeConstraintBuilder(IConstraintBuilder):
         #########################################
         TO_IMPLEMENT Seminar.Task#2
         '''
-        pass
+        self._edge = ge.PriorEdge(self._pose_vertices[0], event, [0.1, 0.1, 0.1])
     
     def ready(self):
         return self._ready
@@ -83,8 +83,9 @@ class OdometryConstraintBuilder(IConstraintBuilder):
         #########################################
         TO_IMPLEMENT Seminar.Task#4
         '''
-        pass
-    
+        self._edge = ge.OdometryEdge(self._pose_vertices[event['time']], self._pose_vertices[event['time'] + 1], event)
+
+
     def ready(self):
         return self._ready
     

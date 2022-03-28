@@ -209,3 +209,24 @@ class LandmarkObservationEdge(Edge):
     #########################################
     TO_IMPLEMENT Homework.Task#1
     '''
+    def __init__(self, pose_vertex, feature_vertex, event):
+        super(LandmarkObservationEdge, self).__init__([pose_vertex, feature_vertex])
+        self._z = np.array(event['measurement'])
+        self._inf = np.array(event['Q'])
+
+    def compute_error(self):
+        car_pose = self.vertices[0].params
+        feature_pose = self.vertices[1].params
+        diff_x = (car_pose[0] - self._z[0])
+        diff_y = (car_pose[1] - self._z[1])
+
+        landmark_pos_local_frame = np.array(
+            [
+                car_pose[0] * np.cos(car_pose[2]) + car_pose[1] * np.sin(car_pose[2]) + self._z[0],
+                car_pose[0] * np.sin(car_pose[2]) - car_pose[1] * np.cos(car_pose[2]) + self._z[1]
+             ]
+        )
+
+        print(landmark_pos_local_frame)
+        self.error = landmark_pos_local_frame - feature_pose
+        print(self.error)
