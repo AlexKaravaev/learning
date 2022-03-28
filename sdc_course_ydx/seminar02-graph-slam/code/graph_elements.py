@@ -1,4 +1,5 @@
 import numpy as np
+import scipy.spatial
 
 import transforms as ts
 
@@ -136,14 +137,56 @@ class OdometryEdge(Edge):
     @property
     def to_vertex(self):
         return self.vertices[1]
-    
+
+
     def compute_error(self):
         '''
         #########################################
         TO_IMPLEMENT Seminar.Task#3
         '''
-        pass
+        x_t = self.vertices[1].params[0]
+        y_t = self.vertices[1].params[1]
+        theta = self.vertices[1].params[2]
 
+        x_t_prev = self.vertices[0].params[0]
+        y_t_prev = self.vertices[0].params[1]
+        theta_prev = self.vertices[0].params[2]
+
+
+        mu = 0.5 * ((x_t_prev - x_t) * np.cos(theta_prev) + (y_t_prev - y_t) * np.sin(theta_prev))/ \
+                    ((y_t_prev - y_t) * np.cos(theta_prev) - (x_t_prev - x_t) * np.sin(theta_prev))
+
+        x_c = (x_t_prev + x_t)/2 + mu*(y_t_prev-y_t)
+        y_c = (y_t_prev + y_t)/2 + mu*(x_t-x_t_prev)
+
+        sign = np.sign(y_c - y_t_prev)
+
+        center_in_prev = np.array([x_c, y_c]) - self.from_vertex.params[:-1]
+        r = np.linalg.norm(center_in_prev)
+        delta_theta = np.arctan2(y_t - y_c, x_t - x_c) - np.arctan2(y_t_prev - y_c, x_t_prev - x_c)
+
+
+        v_est = r*delta_theta*sign
+        omega_est = delta_theta
+
+        theta_est = theta_prev + omega_est
+        cos_dist = scipy.spatial.distance.cosine(np.array([x_t - x_t_prev, y_t - y_t_prev]),
+                                          np.array([np.cos(theta_prev), np.sin(theta_prev)]))
+        # That means car was going linear
+
+        if (cos_dist < 1e-3 or  np.fabs(cos_dist - 2.) < 1e-3):
+            est_ = np.array([np.dot(np.array([x_t - x_t_prev, y_t - y_t_prev]),
+                                    np.array([np.cos(theta_prev), np.sin(theta_prev)])), 0.])
+            v_est = est_[0]
+            omega_est = est_[1]
+
+        self.error = np.array(
+            [
+                self._v - v_est,
+                self._w - omega_est,
+                theta - theta_est
+            ]
+        )
 
 class Landmark(Vertex):
     '''
