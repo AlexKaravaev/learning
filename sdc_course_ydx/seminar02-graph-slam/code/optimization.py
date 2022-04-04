@@ -31,18 +31,22 @@ class Optimization(object):
         self._lambda_factor = 2.0
 
     def _apply_control(self, pose, control):
+        v = control[0]
+        w = control[1]
+        omega = pose.params[2]
         # Linear motion
-        if control[1] == 0:
+
+        if np.fabs(w) < 1e-3:
             return ge.SE2Vertex([
-                pose.params[0] + control[0],
-                pose.params[1],
+                pose.params[0] + v * np.cos(omega),
+                pose.params[1] + v * np.sin(omega),
                 pose.params[2]
             ])
 
         return ge.SE2Vertex([
-            pose.params[0] + control[0] / control[1] * (-np.sin(pose.params[2]) + np.sin(pose.params[2] + control[1])),
-            pose.params[1] + control[0] / control[1] * (np.cos(pose.params[2]) - np.cos(pose.params[2] + control[1])),
-            control[1]])
+            pose.params[0] + v/w * (-np.sin(omega) + np.sin(omega + w)),
+            pose.params[1] + v/w * (np.cos(omega) - np.cos(omega + w)),
+            pose.params[2] + w])
 
 
     def _init_pose_vertices(self, timeline):

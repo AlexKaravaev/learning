@@ -214,6 +214,8 @@ class LandmarkObservationEdge(Edge):
         self._z = np.array(event['measurement'])
         q = np.array(event['Q'])
         self.inf = np.diag(1.0 / q[np.where(q!=0)])
+        self.feature_vertex = feature_vertex
+        self.pose_vertex = pose_vertex
 
     def compute_error(self):
         car_pose = self.vertices[0].params
@@ -230,5 +232,7 @@ class LandmarkObservationEdge(Edge):
             feature_pose[1] - car_pose[1]
         ])
 
+
         landmark_pos_local_frame = np.dot(np.linalg.inv(R), feature_pose)
+
         self.error = self._z - landmark_pos_local_frame

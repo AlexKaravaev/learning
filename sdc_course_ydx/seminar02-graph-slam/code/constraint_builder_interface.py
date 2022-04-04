@@ -1,5 +1,6 @@
 import numpy as np
 import graph_elements as ge
+import transforms as ts
 
 class Constraint(object):
     '''
@@ -102,6 +103,8 @@ class LandmarkConstraintBuilder(IConstraintBuilder):
     def __init__(self, pose_vertices):
         self._ready = False
         self._feature = None
+        self._pose_vertices = pose_vertices
+        self._observed_features = {}
         '''
         #########################################
         TO_IMPLEMENT Homework.Task#2
@@ -112,7 +115,27 @@ class LandmarkConstraintBuilder(IConstraintBuilder):
         #########################################
         TO_IMPLEMENT Homework.Task#2
         '''
-        pass
+        if event['type'] != 'point':
+            self._ready = False
+            return
+
+        timestamp = event['time']
+        landmark_pos_local_frame = np.array(event['measurement'])
+        landmark_id = event['index']
+
+
+        if landmark_id not in self._observed_features:
+            # Transform landmark to global frame
+            self._ready = True
+            T = ts.Transform2D.from_pose(self._pose_vertices[timestamp].params)
+            landmark_pos_global_frame = T.transform(landmark_pos_local_frame)
+            self._feature = ge.Feature(ge.Landmark(landmark_pos_global_frame), edges=[], ftype=1)
+            self._observed_features[landmark_id] = self._feature
+        else:
+            self._ready = False
+
+        self._observed_features[landmark_id].edges.append(
+            ge.LandmarkObservationEdge(self._pose_vertices[timestamp], self._observed_features[landmark_id].vertex, event))
     
     def ready(self):
         return self._ready
